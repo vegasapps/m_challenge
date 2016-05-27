@@ -1,0 +1,50 @@
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+
+@font-face {
+    font-family: oldworld;
+    src: url(../fonts/IMFeENsc28P.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: unisans;
+    src: url(../fonts/UniSansBold.otf);
+}
+
+
+body{margin:0; padding:0; width:auto; margin:0; padding:0; background:#000; text-align:center; 
+	background:transparent url(../assets/panels/paper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+#headerWrap{ position:0; width:100%; } 
+#header {width:100%; height:40px; background:#090909; margin:0 auto; border-bottom: 1px solid #222; text-align: left;}
+#header h4 {width:400px; height:40px; background:#171717; color:#b42b01; text-align: center; position: absolute; margin:17px 0 0 50px; font-size:1.3em; padding-top: 8px; border: 1px solid #000; font-family:oldworld;  font-size:1.7em;}
+
+#mainContainer { width:800px; margin:230px auto 0 auto; height:350px; border:2px solid #090909; text-align:center; background:#121212;  border:2px solid #000;}
+#doors {width:760px; height:310px; margin:10px auto 0 auto; background:#111; text-align:left;}
+#doors li {list-style-type: none; padding:0; margin: 40px 0 0 40px; display:inline-block; width:200px; height:230px; background:#070707; text-align: center}
+#doors li p {color:#fff; font-size:0.9em; margin-top:25px; font-family:unisans; opacity:0.2; }
+
+
+#clipedPanel1 { background:transparent url(../assets/panels/pnl1.jpg); width:200px;  height:230px; clip-path: url(#cmask);
+position:absolute; border:none; position:absolute; margin:0px 0 0 0;}
+
+#clipedPanel2 { background:transparent url(../assets/panels/pnl2.jpg); width:200px;  height:230px; clip-path: url(#cmask);
+position:absolute; border:none; position:absolute; margin:0px 0 0 0;}
+
+#clipedPanel3 { background:transparent url(../assets/panels/pnl3.jpg); width:200px;  height:230px; clip-path: url(#cmask);
+position:absolute; border:none; position:absolute; margin:0px 0 0 0;}
+
+
+.bkDoor {width:200px; height:230px; background:#090909; z-index:2; position:absolute; margin:0 0 -44px 0; text-align:center;
+	font-size:3em;}
+
+.bkDoor h2 {margin-top:71px; color:red; opacity:0.2;}
+
+
+

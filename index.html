@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UI Angler</title>
+</head>
+
+
+
+<link href="css/mc.css" type="text/css" rel="stylesheet" >
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+
+<body ng-app="myApp">
+	<!-- Begin Main Header--> 
+	<div id="headerWrap"> 
+	  <div id="header"> 
+		  <h4>Mordor Challenge</h4>
+	  </div> 
+	</div> 
+	
+	
+	<div id="mainContainer">
+		
+		<div id="doors">
+			
+			<li id="doorA" class="doorFrame" ng-mouseenter="hoverMdTwo()" ng-mouseleave="offMdTwo()" ng-controller="Controller1">
+				<div id="blackDoor1" class="bkDoor">
+					<h2 id="d1" ng-bind-template="{{doorA.dNumber}}"></h2>
+				</div>
+				<div id="clipedPanel1"> </div>
+
+					<svg width="200" height="225">
+						<defs>
+							<clipPath id="mask">
+								<circle cx="50" cy="50" r="50" />
+							</clipPath>
+						</defs>
+					</svg>
+					
+					<p id="titleA" ng-bind-template="{{doorA.dTitle}}"></p>
+				<ul>
+					<li ng-repeat="(country,goals) in items">{{country}} {{goals}}</li>
+				</ul>
+			</li>
+			
+			
+			
+			<li id="doorB" class="doorFrame" ng-mouseenter="hoverMdTwo()" ng-mouseleave="offMdTwo()" ng-controller="Controller2">
+				
+				<div id="blackDoor2" class="bkDoor">
+					<h2 id="d2" ng-bind-template="{{doorB.dNumber}}"></h2>
+				</div>
+				<div id="clipedPanel2"> </div>
+
+					<svg width="200" height="225">
+						<defs>
+							<clipPath id="mask">
+								<circle cx="50" cy="50" r="50" />
+							</clipPath>
+						</defs>
+					</svg>
+				<p id="titleB" ng-bind-template="{{doorB.dTitle}}"></p>
+			</li>
+			
+				
+			
+			<li id="doorC" class="doorFrame" ng-mouseenter="hoverMdTwo()" ng-mouseleave="offMdTwo()" ng-controller="Controller3">
+				
+				<div id="blackDoor3" class="bkDoor">
+					<h2 id="d3" ng-bind-template="{{doorC.dNumber}}"></h2>
+				</div>
+				<div id="clipedPanel3"> </div>
+
+					<svg width="200" height="225">
+						<defs>
+							<clipPath id="mask">
+								<circle cx="50" cy="50" r="50" />
+							</clipPath>
+						</defs>
+					</svg>
+				<p id="titleC" ng-bind-template="{{doorC.dTitle}}"></p>
+				
+			
+			</li> 
+		
+		</div>
+
+	</div>
+			
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers/controller1.js"></script>
+	<script type="text/javascript" src="js/controllers/controller2.js"></script>
+	<script type="text/javascript" src="js/controllers/controller3.js"></script>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/plugins/CSSPlugin.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenLite.min.js"></script>
+	
+</body>
+</html>
